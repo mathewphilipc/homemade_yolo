@@ -9,15 +9,15 @@ Build a function `contains_banana(img)` that takes in an image `img`, resizes it
 
 ## Step 2
 
-Build a function `crop_image(img, quadrant)` that takes in an image `img` and a parameter ``quadrant` in ["TL", "TR", "BL", "BR"] and returns the top left 2/3 x 2/3, the top left, the top right, the bottom left, or the bottom right, depending on the parameter value. To visualize this partitioning, imagine that we lay a tic tac toe board over the image. Then the TL partition corresponds to the roughly 67% of the image lying in the top-left-most four squares.
+Build a function `crop_image(img, quadrant)` that takes in an image `img` and a parameter ``quadrant` in `["TL", "TR", "BL", "BR"]` and returns the top left 2/3 x 2/3, the top left, the top right, the bottom left, or the bottom right, depending on the parameter value. To visualize this partitioning, imagine that we lay a tic tac toe board over the image. Then the TL partition corresponds to the roughly 67% of the image lying in the top-left-most four squares.
 
 ## Step 3
 
-Now combine the results of steps 1 and 2 to build the function `find_banana(img)`. If the image argument doesn't contain a banana, the function should return the string `None`. If it does contain a banana, the function should return either `TL`, `TR`, `BL`, `BR`, or `C` (for "center") depending on whether one of the four partitions or the original image has the highest banana probability (according to ResNet50).
+Now combine the results of steps 1 and 2 to build the function `find_banana(img)`. If the image argument doesn't contain a banana, the function should return the string `None`. If it does contain a banana, the function should return either `"TL"`, `"TR"`, `"BL"`, `"BR"`, or `"C"` (for "center") depending on whether one of the four partitions or the original image has the highest banana probability (according to ResNet50).
 
 ## Stretch goals
 
-The function `crop_image` should complain if the parameter `quadrant` isn't one of ["TL", "TR", "BL", "BR"]. Modify the function slightly so that it throws an appropriate error if an invalid quadrant is passed.
+The function `crop_image` should complain if the parameter `quadrant` isn't one of `["TL", "TR", "BL", "BR"]`. Modify the function slightly so that it throws an appropriate error if an invalid quadrant is passed.
 
 Write `pytest` tests to make sure that `contains_banana` correctly finds that each image in `sample_data/positive_examples` contains a banana and each image in `sample_data/negative_examples` does not.
 
@@ -27,4 +27,4 @@ For reference on ResNet50, see https://www.pyimagesearch.com/2017/03/20/imagenet
 
 For example usage, see https://keras.io/applications/.
 
-This material was made under an MIT License. All images are borrowed freely from Wikipedia.
+This material was made under an MIT License. All images are free stock photos courtesy of pexels.com.
