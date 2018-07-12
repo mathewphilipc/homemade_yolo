@@ -4,7 +4,7 @@ In this challenge you'll build a very simple implementation of object detection 
 
 ## Step 1
 
-Build a function `contains_banana(img)` that takes in an image `img`, resizes it to 196x196, and returns a float describing the confidence with which Keras believes the image contains a banana. Do this using the Keras pretrained ResNet50 architecture. If "banana" is in ResNet50's top-3 results for the image, report the corresponding reported probability. Otherwise, return 0.0. To test that this function works, you should apply it to the examples in the `sample_data` folder.
+Build a function `contains_banana(img)` that takes in an image `img`, resizes it to 224x224, and returns a float describing the confidence with which Keras believes the image contains a banana. Do this using the Keras pretrained ResNet50 architecture. If "banana" is in ResNet50's top-3 results for the image, report the corresponding reported probability. Otherwise, return 0.0. To test that this function works, you should apply it to the examples in the `sample_data` folder.
 
 
 ## Step 2
